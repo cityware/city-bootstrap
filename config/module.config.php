@@ -23,32 +23,32 @@ return array(
     'view_helpers' => array (
         'invokables' => array (
             //Alert
-            'alert' => 'Cityware\Bootstrap\View\HelperAlert',
+            'alert' => 'Cityware\Bootstrap\View\Helper\Alert',
             //Badge
-            'badge' => 'Cityware\Bootstrap\View\HelperBadge',
+            'badge' => 'Cityware\Bootstrap\View\Helper\Badge',
             //Button group
-            'buttonGroup' => 'Cityware\Bootstrap\View\HelperButtonGroup',
+            'buttonGroup' => 'Cityware\Bootstrap\View\Helper\ButtonGroup',
             //DropDown
-            'dropDown' => 'Cityware\Bootstrap\View\HelperDropDown',
+            'dropDown' => 'Cityware\Bootstrap\View\Helper\DropDown',
             //Form
-            'form' => 'Cityware\Bootstrap\Form\View\HelperForm',
-            'formButton' => 'Cityware\Bootstrap\Form\View\HelperFormButton',
-            'formSubmit' => 'Cityware\Bootstrap\Form\View\HelperFormButton',
-            'formCheckbox' => 'Cityware\Bootstrap\Form\View\HelperFormCheckbox',
-            'formCollection' => 'Cityware\Bootstrap\Form\View\HelperFormCollection',
-            'formElementErrors' => 'Cityware\Bootstrap\Form\View\HelperFormElementErrors',
-            'formMultiCheckbox' => 'Cityware\Bootstrap\Form\View\HelperFormMultiCheckbox',
-            'formRadio' => 'Cityware\Bootstrap\Form\View\HelperFormRadio',
-            'formRow' => 'Cityware\Bootstrap\Form\View\HelperFormRow',
-            'formStatic' => 'Cityware\Bootstrap\Form\View\HelperFormStatic',
+            'form' => 'Cityware\Bootstrap\Form\View\Helper\Form',
+            'formButton' => 'Cityware\Bootstrap\Form\View\Helper\FormButton',
+            'formSubmit' => 'Cityware\Bootstrap\Form\View\Helper\FormButton',
+            'formCheckbox' => 'Cityware\Bootstrap\Form\View\Helper\FormCheckbox',
+            'formCollection' => 'Cityware\Bootstrap\Form\View\Helper\FormCollection',
+            'formElementErrors' => 'Cityware\Bootstrap\Form\View\Helper\FormElementErrors',
+            'formMultiCheckbox' => 'Cityware\Bootstrap\Form\View\Helper\FormMultiCheckbox',
+            'formRadio' => 'Cityware\Bootstrap\Form\View\Helper\FormRadio',
+            'formRow' => 'Cityware\Bootstrap\Form\View\Helper\FormRow',
+            'formStatic' => 'Cityware\Bootstrap\Form\View\Helper\FormStatic',
             //Form Errors
-            'formErrors' => 'Cityware\Bootstrap\Form\View\HelperFormErrors',
+            'formErrors' => 'Cityware\Bootstrap\Form\View\Helper\FormErrors',
             //Glyphicon
-            'glyphicon' => 'Cityware\Bootstrap\View\HelperGlyphicon',
+            'glyphicon' => 'Cityware\Bootstrap\View\Helper\Glyphicon',
             //FontAwesome
-            'fontAwesome' => 'Cityware\Bootstrap\View\HelperFontAwesome',
+            'fontAwesome' => 'Cityware\Bootstrap\View\Helper\FontAwesome',
             //Label
-            'label' => 'Cityware\Bootstrap\View\HelperLabel'
+            'label' => 'Cityware\Bootstrap\View\Helper\Label'
         ),
         'factories' => array (
             'formElement' => 'Cityware\Bootstrap\Form\View\Helper\FactoryFormElementFactory',
