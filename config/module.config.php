@@ -1,7 +1,7 @@
 <?php
 
 return array(
-    'twbbundle' => array (
+    'bootstrap' => array (
         'ignoredViewHelpers' => array (
             'file',
             'checkbox',
@@ -17,41 +17,41 @@ return array(
     ),
     'service_manager' => array (
         'factories' => array (
-            'TwbBundle\Options\ModuleOptions' => 'TwbBundle\Options\Factory\ModuleOptionsFactory'
+            'Cityware\Bootstrap\Options\ModuleOptions' => 'Cityware\Bootstrap\Options\Factory\ModuleOptionsFactory'
         )
     ),
     'view_helpers' => array (
         'invokables' => array (
             //Alert
-            'alert' => 'TwbBundle\View\Helper\TwbBundleAlert',
+            'alert' => 'Cityware\Bootstrap\View\HelperAlert',
             //Badge
-            'badge' => 'TwbBundle\View\Helper\TwbBundleBadge',
+            'badge' => 'Cityware\Bootstrap\View\HelperBadge',
             //Button group
-            'buttonGroup' => 'TwbBundle\View\Helper\TwbBundleButtonGroup',
+            'buttonGroup' => 'Cityware\Bootstrap\View\HelperButtonGroup',
             //DropDown
-            'dropDown' => 'TwbBundle\View\Helper\TwbBundleDropDown',
+            'dropDown' => 'Cityware\Bootstrap\View\HelperDropDown',
             //Form
-            'form' => 'TwbBundle\Form\View\Helper\TwbBundleForm',
-            'formButton' => 'TwbBundle\Form\View\Helper\TwbBundleFormButton',
-            'formSubmit' => 'TwbBundle\Form\View\Helper\TwbBundleFormButton',
-            'formCheckbox' => 'TwbBundle\Form\View\Helper\TwbBundleFormCheckbox',
-            'formCollection' => 'TwbBundle\Form\View\Helper\TwbBundleFormCollection',
-            'formElementErrors' => 'TwbBundle\Form\View\Helper\TwbBundleFormElementErrors',
-            'formMultiCheckbox' => 'TwbBundle\Form\View\Helper\TwbBundleFormMultiCheckbox',
-            'formRadio' => 'TwbBundle\Form\View\Helper\TwbBundleFormRadio',
-            'formRow' => 'TwbBundle\Form\View\Helper\TwbBundleFormRow',
-            'formStatic' => 'TwbBundle\Form\View\Helper\TwbBundleFormStatic',
+            'form' => 'Cityware\Bootstrap\Form\View\HelperForm',
+            'formButton' => 'Cityware\Bootstrap\Form\View\HelperFormButton',
+            'formSubmit' => 'Cityware\Bootstrap\Form\View\HelperFormButton',
+            'formCheckbox' => 'Cityware\Bootstrap\Form\View\HelperFormCheckbox',
+            'formCollection' => 'Cityware\Bootstrap\Form\View\HelperFormCollection',
+            'formElementErrors' => 'Cityware\Bootstrap\Form\View\HelperFormElementErrors',
+            'formMultiCheckbox' => 'Cityware\Bootstrap\Form\View\HelperFormMultiCheckbox',
+            'formRadio' => 'Cityware\Bootstrap\Form\View\HelperFormRadio',
+            'formRow' => 'Cityware\Bootstrap\Form\View\HelperFormRow',
+            'formStatic' => 'Cityware\Bootstrap\Form\View\HelperFormStatic',
             //Form Errors
-            'formErrors' => 'TwbBundle\Form\View\Helper\TwbBundleFormErrors',
+            'formErrors' => 'Cityware\Bootstrap\Form\View\HelperFormErrors',
             //Glyphicon
-            'glyphicon' => 'TwbBundle\View\Helper\TwbBundleGlyphicon',
+            'glyphicon' => 'Cityware\Bootstrap\View\HelperGlyphicon',
             //FontAwesome
-            'fontAwesome' => 'TwbBundle\View\Helper\TwbBundleFontAwesome',
+            'fontAwesome' => 'Cityware\Bootstrap\View\HelperFontAwesome',
             //Label
-            'label' => 'TwbBundle\View\Helper\TwbBundleLabel'
+            'label' => 'Cityware\Bootstrap\View\HelperLabel'
         ),
         'factories' => array (
-            'formElement' => 'TwbBundle\Form\View\Helper\Factory\TwbBundleFormElementFactory',
+            'formElement' => 'Cityware\Bootstrap\Form\View\Helper\FactoryFormElementFactory',
         )
     ),
 );
