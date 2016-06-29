@@ -6,7 +6,7 @@ use Zend\Form\View\Helper\Form;
 use Zend\Form\FormInterface;
 use Zend\Form\FieldsetInterface;
 
-class Form extends Form {
+class BootstrapForm extends Form {
 
     /**
      * @var string
@@ -101,8 +101,8 @@ class Form extends Form {
                 $bHasColumnSize = true;
             }
             // Define layout option to form elements if not already defined
-            if ($sFormLayout && empty($aOptions['twb-layout'])) {
-                $oElement->setOption('twb-layout', $sFormLayout);
+            if ($sFormLayout && empty($aOptions['bootstrap-layout'])) {
+                $oElement->setOption('bootstrap-layout', $sFormLayout);
             }
 
             // Manage button group option

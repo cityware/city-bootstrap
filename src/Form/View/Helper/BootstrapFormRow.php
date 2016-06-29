@@ -9,7 +9,7 @@ use Zend\Form\LabelAwareInterface;
 use Zend\Form\Element\Button;
 use Zend\Form\Element\Submit;
 
-class FormRow extends FormRow {
+class BootstrapFormRow extends FormRow {
 
     /**
      * @var string
@@ -57,7 +57,7 @@ class FormRow extends FormRow {
         }
 
         // Retrieve expected layout
-        $sLayout = $oElement->getOption('twb-layout');
+        $sLayout = $oElement->getOption('bootstrap-layout');
 
         // Define label position
         if ($sLabelPosition === null) {
@@ -111,7 +111,7 @@ class FormRow extends FormRow {
      */
     public function getRowClassFromElement(\Zend\Form\ElementInterface $oElement) {
         $sRowClass = '';
-        if ($sFormGroupSize = $oElement->getOption('twb-form-group-size')) {
+        if ($sFormGroupSize = $oElement->getOption('bootstrap-form-group-size')) {
             $sRowClass = $sFormGroupSize;
         }
 
@@ -124,7 +124,7 @@ class FormRow extends FormRow {
         }
 
         // Column size
-        if (($sColumSize = $oElement->getOption('column-size')) && $oElement->getOption('twb-layout') !== Form::LAYOUT_HORIZONTAL
+        if (($sColumSize = $oElement->getOption('column-size')) && $oElement->getOption('bootstrap-layout') !== Form::LAYOUT_HORIZONTAL
         ) {
             $sRowClass .= ' col-' . $sColumSize;
         }
@@ -168,7 +168,7 @@ class FormRow extends FormRow {
      */
     protected function renderElement(ElementInterface $oElement, $sLabelPosition = null) {
         //Retrieve expected layout
-        $sLayout = $oElement->getOption('twb-layout');
+        $sLayout = $oElement->getOption('bootstrap-layout');
 
         // Define label position
         if ($sLabelPosition === null) {

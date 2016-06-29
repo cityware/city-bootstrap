@@ -6,7 +6,7 @@ use Zend\Form\Element\Collection as CollectionElement;
 use Zend\Form\View\Helper\FormCollection;
 use Zend\Form\ElementInterface;
 
-class FormCollection extends FormCollection {
+class BootstrapFormCollection extends FormCollection {
 
     /**
      * @var string
@@ -40,28 +40,28 @@ class FormCollection extends FormCollection {
         $bShouldWrap = $this->shouldWrap;
 
         $sMarkup = '';
-        $sElementLayout = $oElement->getOption('twb-layout');
+        $sElementLayout = $oElement->getOption('bootstrap-layout');
         if ($oElement instanceof \IteratorAggregate) {
             $oElementHelper = $this->getElementHelper();
             $oFieldsetHelper = $this->getFieldsetHelper();
 
             foreach ($oElement->getIterator() as $oElementOrFieldset) {
                 $aOptions = $oElementOrFieldset->getOptions();
-                if ($sElementLayout && empty($aOptions['twb-layout'])) {
-                    $aOptions['twb-layout'] = $sElementLayout;
+                if ($sElementLayout && empty($aOptions['bootstrap-layout'])) {
+                    $aOptions['bootstrap-layout'] = $sElementLayout;
                     $oElementOrFieldset->setOptions($aOptions);
                 }
 
                 if ($oElementOrFieldset instanceof \Zend\Form\FieldsetInterface) {
                     $sMarkup .= $oFieldsetHelper($oElementOrFieldset);
                 } elseif ($oElementOrFieldset instanceof \Zend\Form\ElementInterface) {
-                    if ($oElementOrFieldset->getOption('twb-row-open')) {
+                    if ($oElementOrFieldset->getOption('bootstrap-row-open')) {
                         $sMarkup .= '<div class="row">' . PHP_EOL;
                     }
 
                     $sMarkup .= $oElementHelper($oElementOrFieldset);
 
-                    if ($oElementOrFieldset->getOption('twb-row-close')) {
+                    if ($oElementOrFieldset->getOption('bootstrap-row-close')) {
                         $sMarkup .= '</div>' . PHP_EOL;
                     }
                 }
@@ -108,9 +108,9 @@ class FormCollection extends FormCollection {
      * @return string
      */
     public function renderTemplate(CollectionElement $collection) {
-        if (false != ($sElementLayout = $collection->getOption('twb-layout'))) {
+        if (false != ($sElementLayout = $collection->getOption('bootstrap-layout'))) {
             $elementOrFieldset = $collection->getTemplateElement();
-            $elementOrFieldset->setOption('twb-layout', $sElementLayout);
+            $elementOrFieldset->setOption('bootstrap-layout', $sElementLayout);
         }
 
         return parent::renderTemplate($collection);

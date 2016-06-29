@@ -10,7 +10,7 @@ use LogicException;
 use Zend\Form\Element\Checkbox;
 use Zend\Form\View\Helper\FormLabel;
 
-class FormCheckbox extends FormCheckbox {
+class BootstrapFormCheckbox extends FormCheckbox {
 
     /**
      * Form label helper instance
@@ -26,7 +26,7 @@ class FormCheckbox extends FormCheckbox {
      * @return string
      */
     public function render(ElementInterface $oElement) {
-        if ($oElement->getOption('disable-twb')) {
+        if ($oElement->getOption('disable-bootstrap')) {
             return parent::render($oElement);
         }
 

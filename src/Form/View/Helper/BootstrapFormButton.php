@@ -9,7 +9,7 @@ use Zend\Form\LabelAwareInterface;
 use Zend\Form\View\Helper\FormButton;
 use Zend\Form\ElementInterface;
 
-class FormButton extends FormButton {
+class BootstrapFormButton extends FormButton {
 
     /**
      * @var string
@@ -207,7 +207,7 @@ class FormButton extends FormButton {
             /*
              * No container
              */
-            if ($oElement->getOption('disable-twb')) {
+            if ($oElement->getOption('disable-bootstrap')) {
                 return $sMarkup . $this->getView()->dropdown()->renderListItems($aDropdownOptions);
             }
 

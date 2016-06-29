@@ -5,7 +5,7 @@ namespace Cityware\Bootstrap\View\Helper;
 use Zend\Form\View\Helper\AbstractHelper;
 use InvalidArgumentException;
 
-class Badge extends AbstractHelper {
+class BootstrapBadge extends AbstractHelper {
 
     /**
      * @var string

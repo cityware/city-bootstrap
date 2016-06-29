@@ -6,7 +6,7 @@ use Zend\Form\View\Helper\AbstractHelper;
 use LogicException;
 use InvalidArgumentException;
 
-class DropDown extends AbstractHelper {
+class BootstrapDropDown extends AbstractHelper {
 
     /**
      * @var string

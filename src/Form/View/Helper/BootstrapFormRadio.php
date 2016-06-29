@@ -6,7 +6,7 @@ use Zend\Form\View\Helper\FormRadio;
 use Zend\Form\ElementInterface;
 use Zend\Form\Element\MultiCheckbox;
 
-class FormRadio extends FormRadio {
+class BootstrapFormRadio extends FormRadio {
 
     /**
      * Separator for checkbox elements
@@ -27,7 +27,7 @@ class FormRadio extends FormRadio {
     public function render(ElementInterface $oElement) {
         $aElementOptions = $oElement->getOptions();
 
-        if (isset($aElementOptions['disable-twb']) && $aElementOptions['disable-twb'] == true) {
+        if (isset($aElementOptions['disable-bootstrap']) && $aElementOptions['disable-bootstrap'] == true) {
             $sSeparator = $this->separator;
             $this->separator = '';
             $sReturn = parent::render($oElement);

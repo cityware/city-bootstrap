@@ -5,7 +5,7 @@ namespace Cityware\Bootstrap\Form\View\Helper;
 use Zend\Form\ElementInterface;
 use Zend\View\Helper\AbstractHelper;
 
-class FormStatic extends AbstractHelper {
+class BootstrapFormStatic extends AbstractHelper {
 
     /**
      * @var string

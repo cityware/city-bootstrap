@@ -15,7 +15,7 @@ use Zend\I18n\Translator\Translator;
 use Cityware\Bootstrap\Options\ModuleOptions;
 use Zend\Form\Element\Button;
 
-class FormElement extends FormElement implements TranslatorAwareInterface {
+class BootstrapFormElement extends FormElement implements TranslatorAwareInterface {
 
     /**
      * @var string
@@ -175,7 +175,7 @@ class FormElement extends FormElement implements TranslatorAwareInterface {
             }
 
             $aAddOnOptions['element']->setOptions(array_merge(
-                            $aAddOnOptions['element']->getOptions(), array('disable-twb' => true)
+                            $aAddOnOptions['element']->getOptions(), array('disable-bootstrap' => true)
             ));
 
             $sMarkup .= $this->render($aAddOnOptions['element']);

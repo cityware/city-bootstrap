@@ -5,7 +5,7 @@ namespace Cityware\Bootstrap\Form\View\Helper;
 use Zend\Form\View\Helper\AbstractHelper;
 use Zend\Form\FormInterface;
 
-class FormErrors extends AbstractHelper {
+class BootstrapFormErrors extends AbstractHelper {
 
     protected $defaultErrorText = 'There were errors in the form submission';
     protected $messageOpenFormat = '<h4>%s</h4><ul><li>';

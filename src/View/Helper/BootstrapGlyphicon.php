@@ -5,7 +5,7 @@ namespace Cityware\Bootstrap\View\Helper;
 use InvalidArgumentException;
 use Zend\Form\View\Helper\AbstractHelper;
 
-class Glyphicon extends AbstractHelper {
+class BootstrapGlyphicon extends AbstractHelper {
 
     /**
      * @var string

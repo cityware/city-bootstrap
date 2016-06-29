@@ -8,7 +8,7 @@ use Zend\Form\View\Helper\AbstractHelper;
 use Zend\Form\ElementInterface;
 use Zend\Form\Factory;
 
-class ButtonGroup extends AbstractHelper {
+class BootstrapButtonGroup extends AbstractHelper {
 
     /**
      * @var string

@@ -10,7 +10,7 @@ class ModuleOptionsFactory implements FactoryInterface {
 
     public function createService(ServiceLocatorInterface $serviceLocator) {
         $config = $serviceLocator->get('Config');
-        $options = $config['twbbundle'];
+        $options = $config['cityBootstrap'];
         return new ModuleOptions($options);
     }
 

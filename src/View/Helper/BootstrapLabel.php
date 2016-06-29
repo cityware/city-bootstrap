@@ -5,7 +5,7 @@ namespace Cityware\Bootstrap\View\Helper;
 use InvalidArgumentException;
 use Zend\Form\View\Helper\AbstractHelper;
 
-class Label extends AbstractHelper {
+class BootstrapLabel extends AbstractHelper {
 
     /**
      * @var string

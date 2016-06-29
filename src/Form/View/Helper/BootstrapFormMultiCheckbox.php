@@ -5,7 +5,7 @@ namespace Cityware\Bootstrap\Form\View\Helper;
 use Zend\Form\View\Helper\FormMultiCheckbox;
 use Zend\Form\ElementInterface;
 
-class FormMultiCheckbox extends FormMultiCheckbox {
+class BootstrapFormMultiCheckbox extends FormMultiCheckbox {
 
     /**
      * @see FormMultiCheckbox::render()

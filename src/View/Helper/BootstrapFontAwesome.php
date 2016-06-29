@@ -9,7 +9,7 @@ use Zend\Form\View\Helper\AbstractHelper;
  * Class FontAwesome
  * @package Cityware\Bootstrap\View\Helper
  */
-class FontAwesome extends AbstractHelper {
+class BootstrapFontAwesome extends AbstractHelper {
 
     /**
      * @var string
